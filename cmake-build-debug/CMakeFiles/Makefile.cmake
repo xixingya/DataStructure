@@ -53,6 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/DataStructure.dir/DependInfo.cmake"
   "CMakeFiles/LNode.dir/DependInfo.cmake"
+  "CMakeFiles/InsertSort.dir/DependInfo.cmake"
   "CMakeFiles/BiTree.dir/DependInfo.cmake"
   "CMakeFiles/HuffmanTree.dir/DependInfo.cmake"
   "CMakeFiles/BiSortTree.dir/DependInfo.cmake"

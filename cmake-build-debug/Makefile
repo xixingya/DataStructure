@@ -136,6 +136,19 @@ LNode/fast:
 .PHONY : LNode/fast
 
 #=============================================================================
+# Target rules for targets named InsertSort
+
+# Build rule for target.
+InsertSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 InsertSort
+.PHONY : InsertSort
+
+# fast build rule for target.
+InsertSort/fast:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/build
+.PHONY : InsertSort/fast
+
+#=============================================================================
 # Target rules for targets named BiTree
 
 # Build rule for target.
@@ -255,6 +268,33 @@ HuffmanTree.cpp.s:
 	$(MAKE) -f CMakeFiles\HuffmanTree.dir\build.make CMakeFiles/HuffmanTree.dir/HuffmanTree.cpp.s
 .PHONY : HuffmanTree.cpp.s
 
+InsertSort.obj: InsertSort.cpp.obj
+
+.PHONY : InsertSort.obj
+
+# target to build an object file
+InsertSort.cpp.obj:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/InsertSort.cpp.obj
+.PHONY : InsertSort.cpp.obj
+
+InsertSort.i: InsertSort.cpp.i
+
+.PHONY : InsertSort.i
+
+# target to preprocess a source file
+InsertSort.cpp.i:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/InsertSort.cpp.i
+.PHONY : InsertSort.cpp.i
+
+InsertSort.s: InsertSort.cpp.s
+
+.PHONY : InsertSort.s
+
+# target to generate assembly for a file
+InsertSort.cpp.s:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/InsertSort.cpp.s
+.PHONY : InsertSort.cpp.s
+
 LNode.obj: LNode.cpp.obj
 
 .PHONY : LNode.obj
@@ -317,6 +357,7 @@ help:
 	@echo ... depend
 	@echo ... DataStructure
 	@echo ... LNode
+	@echo ... InsertSort
 	@echo ... BiTree
 	@echo ... HuffmanTree
 	@echo ... edit_cache
@@ -331,6 +372,9 @@ help:
 	@echo ... HuffmanTree.obj
 	@echo ... HuffmanTree.i
 	@echo ... HuffmanTree.s
+	@echo ... InsertSort.obj
+	@echo ... InsertSort.i
+	@echo ... InsertSort.s
 	@echo ... LNode.obj
 	@echo ... LNode.i
 	@echo ... LNode.s

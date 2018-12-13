@@ -107,7 +107,7 @@ clean: CMakeFiles/DataStructure.dir/clean
 CMakeFiles/LNode.dir/all:
 	$(MAKE) -f CMakeFiles\LNode.dir\build.make CMakeFiles/LNode.dir/depend
 	$(MAKE) -f CMakeFiles\LNode.dir\build.make CMakeFiles/LNode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\26794\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target LNode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\26794\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target LNode"
 .PHONY : CMakeFiles/LNode.dir/all
 
 # Include target in all.
@@ -134,6 +134,43 @@ CMakeFiles/LNode.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/LNode.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/InsertSort.dir
+
+# All Build rule for target.
+CMakeFiles/InsertSort.dir/all:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/depend
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\26794\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target InsertSort"
+.PHONY : CMakeFiles/InsertSort.dir/all
+
+# Include target in all.
+all: CMakeFiles/InsertSort.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/InsertSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\26794\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/InsertSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\26794\CLionProjects\DataStructure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/InsertSort.dir/rule
+
+# Convenience name for target.
+InsertSort: CMakeFiles/InsertSort.dir/rule
+
+.PHONY : InsertSort
+
+# clean rule for target.
+CMakeFiles/InsertSort.dir/clean:
+	$(MAKE) -f CMakeFiles\InsertSort.dir\build.make CMakeFiles/InsertSort.dir/clean
+.PHONY : CMakeFiles/InsertSort.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/InsertSort.dir/clean
 
 .PHONY : clean
 
