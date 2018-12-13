@@ -161,6 +161,46 @@ HuffmanTree/fast:
 	$(MAKE) -f CMakeFiles\HuffmanTree.dir\build.make CMakeFiles/HuffmanTree.dir/build
 .PHONY : HuffmanTree/fast
 
+#=============================================================================
+# Target rules for targets named BiSortTree
+
+# Build rule for target.
+BiSortTree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 BiSortTree
+.PHONY : BiSortTree
+
+# fast build rule for target.
+BiSortTree/fast:
+	$(MAKE) -f CMakeFiles\BiSortTree.dir\build.make CMakeFiles/BiSortTree.dir/build
+.PHONY : BiSortTree/fast
+
+BiSortTree.obj: BiSortTree.cpp.obj
+
+.PHONY : BiSortTree.obj
+
+# target to build an object file
+BiSortTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\BiSortTree.dir\build.make CMakeFiles/BiSortTree.dir/BiSortTree.cpp.obj
+.PHONY : BiSortTree.cpp.obj
+
+BiSortTree.i: BiSortTree.cpp.i
+
+.PHONY : BiSortTree.i
+
+# target to preprocess a source file
+BiSortTree.cpp.i:
+	$(MAKE) -f CMakeFiles\BiSortTree.dir\build.make CMakeFiles/BiSortTree.dir/BiSortTree.cpp.i
+.PHONY : BiSortTree.cpp.i
+
+BiSortTree.s: BiSortTree.cpp.s
+
+.PHONY : BiSortTree.s
+
+# target to generate assembly for a file
+BiSortTree.cpp.s:
+	$(MAKE) -f CMakeFiles\BiSortTree.dir\build.make CMakeFiles/BiSortTree.dir/BiSortTree.cpp.s
+.PHONY : BiSortTree.cpp.s
+
 BiTree.obj: BiTree.cpp.obj
 
 .PHONY : BiTree.obj
@@ -280,7 +320,11 @@ help:
 	@echo ... BiTree
 	@echo ... HuffmanTree
 	@echo ... edit_cache
+	@echo ... BiSortTree
 	@echo ... rebuild_cache
+	@echo ... BiSortTree.obj
+	@echo ... BiSortTree.i
+	@echo ... BiSortTree.s
 	@echo ... BiTree.obj
 	@echo ... BiTree.i
 	@echo ... BiTree.s

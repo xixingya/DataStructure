@@ -55,4 +55,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/LNode.dir/DependInfo.cmake"
   "CMakeFiles/BiTree.dir/DependInfo.cmake"
   "CMakeFiles/HuffmanTree.dir/DependInfo.cmake"
+  "CMakeFiles/BiSortTree.dir/DependInfo.cmake"
   )
