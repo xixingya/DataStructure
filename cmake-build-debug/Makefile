@@ -187,6 +187,19 @@ BiSortTree/fast:
 	$(MAKE) -f CMakeFiles\BiSortTree.dir\build.make CMakeFiles/BiSortTree.dir/build
 .PHONY : BiSortTree/fast
 
+#=============================================================================
+# Target rules for targets named ShellSort
+
+# Build rule for target.
+ShellSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ShellSort
+.PHONY : ShellSort
+
+# fast build rule for target.
+ShellSort/fast:
+	$(MAKE) -f CMakeFiles\ShellSort.dir\build.make CMakeFiles/ShellSort.dir/build
+.PHONY : ShellSort/fast
+
 BiSortTree.obj: BiSortTree.cpp.obj
 
 .PHONY : BiSortTree.obj
@@ -322,6 +335,33 @@ LNode.cpp.s:
 	$(MAKE) -f CMakeFiles\LNode.dir\build.make CMakeFiles/LNode.dir/LNode.cpp.s
 .PHONY : LNode.cpp.s
 
+ShellSort.obj: ShellSort.cpp.obj
+
+.PHONY : ShellSort.obj
+
+# target to build an object file
+ShellSort.cpp.obj:
+	$(MAKE) -f CMakeFiles\ShellSort.dir\build.make CMakeFiles/ShellSort.dir/ShellSort.cpp.obj
+.PHONY : ShellSort.cpp.obj
+
+ShellSort.i: ShellSort.cpp.i
+
+.PHONY : ShellSort.i
+
+# target to preprocess a source file
+ShellSort.cpp.i:
+	$(MAKE) -f CMakeFiles\ShellSort.dir\build.make CMakeFiles/ShellSort.dir/ShellSort.cpp.i
+.PHONY : ShellSort.cpp.i
+
+ShellSort.s: ShellSort.cpp.s
+
+.PHONY : ShellSort.s
+
+# target to generate assembly for a file
+ShellSort.cpp.s:
+	$(MAKE) -f CMakeFiles\ShellSort.dir\build.make CMakeFiles/ShellSort.dir/ShellSort.cpp.s
+.PHONY : ShellSort.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -363,6 +403,7 @@ help:
 	@echo ... edit_cache
 	@echo ... BiSortTree
 	@echo ... rebuild_cache
+	@echo ... ShellSort
 	@echo ... BiSortTree.obj
 	@echo ... BiSortTree.i
 	@echo ... BiSortTree.s
@@ -378,6 +419,9 @@ help:
 	@echo ... LNode.obj
 	@echo ... LNode.i
 	@echo ... LNode.s
+	@echo ... ShellSort.obj
+	@echo ... ShellSort.i
+	@echo ... ShellSort.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

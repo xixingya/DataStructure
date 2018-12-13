@@ -6,3 +6,4 @@ C:/Users/26794/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/HuffmanT
 C:/Users/26794/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/26794/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/BiSortTree.dir
 C:/Users/26794/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/26794/CLionProjects/DataStructure/cmake-build-debug/CMakeFiles/ShellSort.dir
