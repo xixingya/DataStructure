@@ -2,7 +2,7 @@
 // Created by 26794 on 2018/12/13.
 //
 /*折半查找*/
-int Binary_Search(int a*,int n,int key)
+int Binary_Search(int *a,int n,int key)
 {
 int low,high,mid;
 low=1;     /*定义最底下标为记录首位*/
