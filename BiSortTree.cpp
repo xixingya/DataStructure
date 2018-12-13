@@ -25,7 +25,32 @@ Status SearchBST(BiTree T,TElemType key,BiTree f,BiTree &p){
 }
 Status InsertBST(BiTree *T,int key){
     BiTree p,s;
-    if(!SearchBST(*T,key,NULL,p)){
+    if(!SearchBST(*T,key,NULL,p)) {
+        s = (BiTree) malloc(sizeof(BiTNode));
+        s->data = key;
+        s->left = NULL;
+        s->right = NULL;
 
+        if (!p) *T = s;
+        else if (key < p->data)
+            p->left = s;
+        else p->right = s;
+        return true;
     }
+    else return false;
+}
+Status Delete(BiTree &T){
+    //未实现
+}
+Status DeleteBST(BiTree &T,int key){
+    if(!T){
+        return false;
+    }
+    if(T->data==key)
+        Delete(T);
+    else if(T->data>key)
+        return DeleteBST(T->left,key);
+    else
+        return DeleteBST(T->right,key);
+
 }
