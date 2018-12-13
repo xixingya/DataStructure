@@ -175,6 +175,19 @@ HuffmanTree/fast:
 .PHONY : HuffmanTree/fast
 
 #=============================================================================
+# Target rules for targets named BinarySearch
+
+# Build rule for target.
+BinarySearch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 BinarySearch
+.PHONY : BinarySearch
+
+# fast build rule for target.
+BinarySearch/fast:
+	$(MAKE) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/build
+.PHONY : BinarySearch/fast
+
+#=============================================================================
 # Target rules for targets named BiSortTree
 
 # Build rule for target.
@@ -253,6 +266,33 @@ BiTree.s: BiTree.cpp.s
 BiTree.cpp.s:
 	$(MAKE) -f CMakeFiles\BiTree.dir\build.make CMakeFiles/BiTree.dir/BiTree.cpp.s
 .PHONY : BiTree.cpp.s
+
+BinarySearch.obj: BinarySearch.cpp.obj
+
+.PHONY : BinarySearch.obj
+
+# target to build an object file
+BinarySearch.cpp.obj:
+	$(MAKE) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/BinarySearch.cpp.obj
+.PHONY : BinarySearch.cpp.obj
+
+BinarySearch.i: BinarySearch.cpp.i
+
+.PHONY : BinarySearch.i
+
+# target to preprocess a source file
+BinarySearch.cpp.i:
+	$(MAKE) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/BinarySearch.cpp.i
+.PHONY : BinarySearch.cpp.i
+
+BinarySearch.s: BinarySearch.cpp.s
+
+.PHONY : BinarySearch.s
+
+# target to generate assembly for a file
+BinarySearch.cpp.s:
+	$(MAKE) -f CMakeFiles\BinarySearch.dir\build.make CMakeFiles/BinarySearch.dir/BinarySearch.cpp.s
+.PHONY : BinarySearch.cpp.s
 
 HuffmanTree.obj: HuffmanTree.cpp.obj
 
@@ -401,15 +441,19 @@ help:
 	@echo ... BiTree
 	@echo ... HuffmanTree
 	@echo ... edit_cache
+	@echo ... BinarySearch
 	@echo ... BiSortTree
-	@echo ... rebuild_cache
 	@echo ... ShellSort
+	@echo ... rebuild_cache
 	@echo ... BiSortTree.obj
 	@echo ... BiSortTree.i
 	@echo ... BiSortTree.s
 	@echo ... BiTree.obj
 	@echo ... BiTree.i
 	@echo ... BiTree.s
+	@echo ... BinarySearch.obj
+	@echo ... BinarySearch.i
+	@echo ... BinarySearch.s
 	@echo ... HuffmanTree.obj
 	@echo ... HuffmanTree.i
 	@echo ... HuffmanTree.s

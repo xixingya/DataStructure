@@ -56,6 +56,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/InsertSort.dir/DependInfo.cmake"
   "CMakeFiles/BiTree.dir/DependInfo.cmake"
   "CMakeFiles/HuffmanTree.dir/DependInfo.cmake"
+  "CMakeFiles/BinarySearch.dir/DependInfo.cmake"
   "CMakeFiles/BiSortTree.dir/DependInfo.cmake"
   "CMakeFiles/ShellSort.dir/DependInfo.cmake"
   )
